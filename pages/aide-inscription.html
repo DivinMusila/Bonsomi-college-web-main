@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <title>Guide d'Inscription - Collège Bonsomi</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        main {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+        }
+        h2 {
+            color: #0D6EFD;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        h3 {
+            color: #0b2c6d;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.8;
+            color: #2e2e2e;
+        }
+        .step-card {
+            border-left: 4px solid #0D6EFD;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #f8f9fa;
+        }
+        .step-number {
+            background-color: #0D6EFD;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .tips {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .container {
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg shadow-header">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <img src="/assets/images/logo.jpg" alt="logo" width="40" height="40" />
+                    <span class="title text-white">Collège Bonsomi</span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menu" aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                    <div class="offcanvas-header">
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto gap-2">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/inscription.html">Inscription</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sport</a></li>
+                                    <li><a class="dropdown-item" href="#">Culture</a></li>
+                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+                        </ul>
+                        <a href="/pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5">
+        <main>
+            <h1 class="text-center text-primary fw-bold mb-4">Guide d'Inscription</h1>
+            <hr class="mb-4">
+
+            <div class="alert alert-info">
+                <strong>Bienvenue au Collège Bonsomi!</strong> Ce guide vous aidera à naviguer le processus d'inscription étape par étape.
+            </div>
+
+            <h2>Étapes du Processus d'Inscription</h2>
+
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Vérifiez votre Admissibilité</h3>
+                <p>Avant de commencer, assurez-vous que votre enfant répond aux critères d'admission du niveau demandé. L'âge et le niveau scolaire doivent correspondre.</p>
+                <div class="tips">
+                    <strong>Conseil :</strong> Si vous avez des doutes sur le niveau approprié, n'hésitez pas à <a href="/pages/contact.html">nous contacter</a> pour discuter.
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Rassemblez les Documents Requis</h3>
+                <p>Préparez les documents suivants avant de remplir le formulaire :</p>
+                <ul>
+                    <li>Bulletin scolaire de l'année précédente (format PDF ou image)</li>
+                    <li>Copie du certificat de naissance de l'enfant</li>
+                    <li>Copie de la pièce d'identité du parent/tuteur</li>
+                    <li>Photo d'identité récente de l'enfant (4x6 cm, format numérique)</li>
+                    <li>Certificat de vaccination à jour</li>
+                </ul>
+                <div class="tips">
+                    <strong>Conseil :</strong> Préparez les fichiers image en avance (JPG ou PNG, max 5 MB). Assurez-vous que les documents sont clairs et lisibles.
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Remplissez le Formulaire d'Inscription</h3>
+                <p>Accédez à notre <a href="/pages/inscription.html">formulaire d'inscription en ligne</a> et remplissez tous les champs obligatoires (marqués d'un *).</p>
+                <p><strong>Le formulaire comprend 4 sections :</strong></p>
+                <ul>
+                    <li><strong>Informations Personnelles :</strong> Données de base de l'élève</li>
+                    <li><strong>Informations Scolaires :</strong> Niveau et filière choisis</li>
+                    <li><strong>Informations du Parent/Tuteur :</strong> Données de contact du responsable</li>
+                    <li><strong>Photo d'Identité :</strong> Photo de l'élève</li>
+                </ul>
+                <div class="tips">
+                    <strong>Conseil :</strong> Complétez les sections dans l'ordre. Les informations se sauvegardent automatiquement.
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Acceptez les Conditions</h3>
+                <p>Lisez attentivement nos <a href="/pages/conditions-inscription.html">conditions d'inscription</a> et cochez les cases d'acceptation avant de soumettre.</p>
+                <div class="tips">
+                    <strong>Important :</strong> En cochant ces cases, vous acceptez les conditions d'inscription du collège. Assurez-vous de bien les comprendre.
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">5</div>
+                <h3>Soumettez le Formulaire</h3>
+                <p>Cliquez sur le bouton "Soumettre l'inscription" pour envoyer votre demande. Vous recevrez une confirmation par email.</p>
+                <div class="tips">
+                    <strong>Conseil :</strong> Conservez votre numéro de confirmation - vous en aurez besoin pour les étapes suivantes.
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">6</div>
+                <h3>Confirmez et Paiement</h3>
+                <p>Après avoir reçu votre confirmation, vous serez contacté pour :</p>
+                <ul>
+                    <li>Confirmer les détails de l'inscription</li>
+                    <li>Discuter des frais de scolarité et des modalités de paiement</li>
+                    <li>Programmer une visite du collège si souhaité</li>
+                </ul>
+            </div>
+
+            <h2>Questions Fréquemment Posées</h2>
+            <p>Pour plus de détails sur les questions courantes, consultez notre <a href="/pages/faq-inscription.html">FAQ</a>.</p>
+
+            <h2>Besoin d'Aide?</h2>
+            <p>Si vous rencontrez des difficultés lors du processus d'inscription :</p>
+            <ul>
+                <li>Consultez notre <a href="/pages/faq-inscription.html">page FAQ</a></li>
+                <li><a href="/pages/contact.html">Contactez-nous directement</a> par téléphone ou email</li>
+                <li>Visitez le collège en personne pendant les heures de bureau</li>
+            </ul>
+
+            <div class="alert alert-success mt-4">
+                <strong>Félicitations d'avoir envisagé le Collège Bonsomi!</strong> Nous nous réjouissons de vous accueillir et de contribuer à l'éducation et au développement de votre enfant.
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <!-- Ressources -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="lien-footer">Accueil</a></li>
+                        <li><a href="/pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
+                        <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
+                    </ul>
+                </div>
+
+                <!-- À propos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">À propos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
+                        <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
+                        <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
+                    </ul>
+                </div>
+
+                <!-- Infos légales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Informations légales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/politique-confidentialite.html" class="lien-footer">Politique de confidentialité</a></li>
+                        <li><a href="/pages/conditions-inscription.html" class="lien-footer">Conditions d'inscription</a></li>
+                        <li><a href="/pages/faq-inscription.html" class="lien-footer">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+            <p>Av. Kinanga 393, Q4 N'djili/Kinshasa </p>
+            <p class="m-0">© 2026 Collège Bonsomi - Tous droits réservés | CAB</p>
+        </div>
+    </footer>
+
+    <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

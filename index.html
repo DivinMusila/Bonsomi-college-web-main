@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <title>Collège Bonsomi</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg shadow-header">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <img src="/assets/images/logo.jpg" alt="logo" width="40" height="40" />
+                    <span class="title text-white">Collège Bonsomi</span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menu" aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                    <div class="offcanvas-header">
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto gap-2">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/inscription.html">Inscription</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sport</a></li>
+                                    <li><a class="dropdown-item" href="#">Culture</a></li>
+                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+                        </ul>
+                        <a href="/pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Héros -->
+    <section class="hero text-center">
+        <div class="hero-content">
+            <img src="/assets/images/logo.jpg" alt="Bonsomi-logo" class="hero-logo">
+            <h1 class="hero-title">Bienvenue au Collège Bonsomi</h1>
+            <p class="hero-subtitle">Une éducation de qualité, fondée sur les valeurs humaines et chrétiennes</p>
+            <div class="hero-buttons">
+                <a href="/pages/inscription.html" class="btn btn-primary btn-lg">S'inscrire maintenant</a>
+                <a href="/pages/about.html" class="btn btn-outline-light btn-lg">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages du collège -->
+    <section class="avantages-section py-5">
+        <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-5">Pourquoi Choisir Bonsomi?</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="avantage-card h-100">
+                        <div class="avantage-icon">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h5 class="text-primary fw-bold">Enseignement de qualité</h5>
+                        <p class="text-muted">Une pédagogie rigoureuse et adaptée aux besoins de chaque élève</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="avantage-card h-100">
+                        <div class="avantage-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="text-primary fw-bold">Communauté de +1400 élèves</h5>
+                        <p class="text-muted">Une communauté vivante et engagée dans la réussite collective</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="avantage-card h-100">
+                        <div class="avantage-icon">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+                        <h5 class="text-primary fw-bold">100% de réussite</h5>
+                        <p class="text-muted">Aux examens d'État avec un accompagnement personnalisé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À la une -->
+    <section class="actualites-section py-5">
+        <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-5">À la une</h2>
+            <div id="leCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/excellente_education.jpg" alt="Excellence par l'éducation" class="d-block w-100 carousel-image">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption text-start">
+                            <div class="caption-content">
+                                <h3>Excellence par l'éducation</h3>
+                                <p>L'excellence par l'éducation constitue le fondement de l'action pédagogique du Collège Bonsomi. Convaincu que l'éducation est un levier essentiel de transformation et de progrès.</p>
+                                <a class="btn btn-primary" href="/pages/actualites.html">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/communauté_éducative.jpg" alt="Communauté éducative" class="d-block w-100 carousel-image">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption text-start">
+                            <div class="caption-content">
+                                <h3>Communauté éducative engagée</h3>
+                                <p>Le Collège Bonsomi est avant tout une communauté éducative unie et engagée, rassemblant élèves, parents, enseignants et personnel administratif.</p>
+                                <a class="btn btn-primary" href="/pages/actualites.html">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#leCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#leCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités parascolaires -->
+    <section class="activites-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-5">Activités Parascolaires</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="activite-card h-100">
+                        <div class="activite-image">
+                            <img src="/assets/images/basket.jpg" alt="Sports">
+                        </div>
+                        <div class="activite-body">
+                            <h5 class="text-primary fw-bold">Sports</h5>
+                            <p class="text-muted">Football • Basketball • Volleyball</p>
+                            <a href="#" class="btn btn-primary btn-sm">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="activite-card h-100">
+                        <div class="activite-image">
+                            <img src="/assets/images/genie_en_herbe.jpg" alt="Sciences">
+                        </div>
+                        <div class="activite-body">
+                            <h5 class="text-primary fw-bold">Sciences</h5>
+                            <p class="text-muted">Génie en herbe • Épelle-mot • Maths</p>
+                            <a href="#" class="btn btn-primary btn-sm">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="activite-card h-100">
+                        <div class="activite-image">
+                            <img src="/assets/images/danse.jpg" alt="Culture">
+                        </div>
+                        <div class="activite-body">
+                            <h5 class="text-primary fw-bold">Culture</h5>
+                            <p class="text-muted">Danse • Chant • Théâtre</p>
+                            <a href="#" class="btn btn-primary btn-sm">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="text-primary fw-bold mb-3">Rejoignez la Communauté Bonsomi</h2>
+            <p class="lead text-muted mb-4">Inscrivez votre enfant aujourd'hui et offrez-lui une excellente éducation</p>
+            <a href="/pages/inscription.html" class="btn btn-primary btn-lg">Commencer l'inscription</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <!-- Ressources -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="lien-footer">Accueil</a></li>
+                        <li><a href="/pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
+                        <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
+                    </ul>
+                </div>
+
+                <!-- À propos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">À propos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
+                        <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
+                        <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
+                    </ul>
+                </div>
+
+                <!-- Infos légales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Informations légales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/politique-confidentialite.html" class="lien-footer">Politique de confidentialité</a></li>
+                        <li><a href="/pages/conditions-inscription.html" class="lien-footer">Conditions d'inscription</a></li>
+                        <li><a href="/pages/faq-inscription.html" class="lien-footer">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+            <p>Av. Kinanga 393, Q4 N'djili/Kinshasa </p>
+            <p class="m-0">© 2026 Collège Bonsomi - Tous droits réservés | CAB</p>
+        </div>
+    </footer>
+
+    <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

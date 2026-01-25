@@ -1,0 +1,303 @@
+html {
+    /* Couleurs primaires - */
+    --bleu-primaire: #0D6EFD;
+    --bleu-primaire-light: #4D95FF;
+    --bleu-primaire-dark: #0A56D1;
+    --bleu-primaire-very-light: #E7F1FE;
+    
+    /* Couleurs secondaires */
+    --accent-orange: #FF6B35;
+    --accent-green: #2ECC71;
+    
+    /* Neutres */
+    --gris-900: #1A1A2E;
+    --gris-800: #2D3748;
+    --gris-700: #4A5568;
+    --gris-600: #718096;
+    --gris-400: #CBD5E0;
+    --gris-200: #EDF2F7;
+    --gris-100: #F7FAFC;
+    --blanc-pur: #FFFFFF;
+    
+    /* Fonds */
+    --fond-principal: #F8F9FA;
+    --fond-secondary: #F0F4FF;
+    --fond-light: #FFFFFF;
+    
+    /* États */
+    --succes: #2ECC71;
+    --avertissement: #F1C40F;
+    --danger: #E74C3C;
+    --info: #3498DB;
+    
+    /* Ombres */
+    --shadow-sm: 0 2px 4px rgba(13, 110, 253, 0.08);
+    --shadow-md: 0 4px 8px rgba(13, 110, 253, 0.12);
+    --shadow-lg: 0 8px 16px rgba(13, 110, 253, 0.15);
+}
+
+body {
+    background-color: var(--gris-100);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--gris-700);
+}
+
+main {
+    flex: 1;
+}
+
+/* Styles du formulaire */
+.inscription-form {
+    background-color: var(--blanc-pur);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    border-left: 4px solid var(--bleu-primaire);
+}
+
+.form-section {
+    border-bottom: 1px solid var(--gris-200);
+    padding-bottom: 2rem;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    background: linear-gradient(135deg, var(--bleu-primaire), var(--bleu-primaire-dark));
+    color: var(--blanc-pur);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+/* Styles des étiquettes et contrôles de formulaire */
+.form-label {
+    font-weight: 600;
+    color: var(--gris-800);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--gris-200);
+    border-radius: 6px;
+    padding: 0.7rem 0.75rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    color: var(--gris-800);
+}
+
+.form-control::placeholder {
+    color: var(--gris-400);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--bleu-primaire);
+    box-shadow: 0 0 0 0.3rem rgba(13, 110, 253, 0.1);
+    color: var(--gris-900);
+}
+
+/* Styles des boutons */
+.btn-lg {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--bleu-primaire), var(--bleu-primaire-dark));
+    border: none;
+    color: var(--blanc-pur);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--bleu-primaire-dark), var(--bleu-primaire));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: var(--blanc-pur);
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--gris-400);
+    color: var(--gris-700);
+    background-color: var(--blanc-pur);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--gris-100);
+    border-color: var(--bleu-primaire);
+    color: var(--bleu-primaire);
+}
+
+/* Checkboxes personnalisées */
+.form-check-input {
+    border: 2px solid var(--gris-300);
+    border-radius: 4px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-check-input:hover {
+    border-color: var(--bleu-primaire);
+}
+
+.form-check-input:checked {
+    background-color: var(--bleu-primaire);
+    border-color: var(--bleu-primaire);
+}
+
+.form-check-input:focus {
+    border-color: var(--bleu-primaire);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+    color: var(--gris-700);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-check-label a {
+    color: var(--bleu-primaire);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.form-check-label a:hover {
+    color: var(--bleu-primaire-dark);
+    text-decoration: underline;
+}
+
+/* Alerte personnalisée */
+.alert-sm {
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--bleu-primaire);
+}
+
+.alert-info {
+    background-color: var(--bleu-primaire-very-light);
+    border-color: var(--bleu-primaire-light);
+    color: var(--gris-900);
+}
+
+.alert-info a {
+    color: var(--bleu-primaire-dark);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.alert-info a:hover {
+    text-decoration: underline;
+    color: var(--bleu-primaire);
+}
+
+/* Barre de progression */
+.progress {
+    background-color: var(--gris-200);
+    border-radius: 6px;
+    height: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--bleu-primaire), var(--bleu-primaire-light));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-lg-8 {
+        padding: 0 1rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    .d-md-flex {
+        flex-direction: column !important;
+    }
+
+    .d-md-flex > button {
+        margin-top: 0.5rem;
+    }
+
+    .inscription-form {
+        padding: 1.5rem;
+    }
+}
+
+/* États de validation */
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: #198754;
+}
+
+/* Small text */
+small {
+    font-size: 0.85rem;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+.footer-links a {
+    text-decoration: none;
+}

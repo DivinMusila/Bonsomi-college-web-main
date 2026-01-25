@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <title>Actualités - Collège Bonsomi</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg shadow-header">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <img src="/assets/images/logo.jpg" alt="logo" width="40" height="40" />
+                    <span class="title text-white">Collège Bonsomi</span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menu" aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                    <div class="offcanvas-header">
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto gap-2">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/inscription.html">Inscription</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sport</a></li>
+                                    <li><a class="dropdown-item" href="#">Culture</a></li>
+                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+                        </ul>
+                        <a href="/pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="container my-5">
+        <div class="page-header mb-5">
+                <h1 class="text-primary fw-bold">Actualités</h1>
+                <p class="text-secondary">Découvrez les dernières infos et annonces du Collège Bonsomi</p>
+        </div>
+
+    <!-- Articles -->
+        <div class="row g-4">
+            <!-- Carte 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/excellente_education.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Excellence par l'éducation</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            L'excellence par l'éducation constitue le fondement de l'action pédagogique du Collège Bonsomi.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>19 décembre 2025</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">3 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/communauté_éducative.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Communauté éducative engagée</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            Le Collège Bonsomi est avant tout une communauté éducative unie et engagée, 
+                            rassemblant élèves, parents, enseignants...
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>19 décembre 2025</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">5 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/Noel.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Un enfant est né, un fils nous a été donné</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            Joyeux noel 2025 et bonne année 2026
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>23 décembre 2025</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">2 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/messe.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Fête de Noël anticipée au Collège 
+                            Bonsomi</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            La fête de Noël anticipée au Collège Bonsomi s’est déroulée dans une 
+                            atmosphère à la fois spirituelle et festive, traduisant fidèlement le sens 
+                            profond de cette célébration chrétienne..
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>20 décembre 2025</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">8 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/bonne_année.png" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">MESSAGE DE NOUVEL AN : COMMUNAUTÉ 
+                            ÉDUCATIVE BONSOMIENNE</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            En ce passage vers 2026, la communauté Bonsomienne adresse ses vœux les 
+                            plus chaleureux à tous ses élèves, éducateurs, anciens et amis.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>1 janvier 2026</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">6 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/journée sportive.png" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Journée d’amitié inter-collèges 
+                            jésuites au Collège Boboto</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            Le samedi 17 janvier 2026, le Collège Boboto accueillera une journée d
+                            ’amitié inter-collèges jésuites, réunissant plusieurs établissements autour d’activités sportives et intellectuelles, à partir de 9h00.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>17 janvier 2026</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">4 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 7 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/rentrée_scolaire2026.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">La rentrée scolaire est prévue pour 
+                            le mardi 06 janvier 2026</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            La rentrée scolaire est prévue pour le mardi 06 janvier 2026.Après les vacances 
+                            de Noël, riches en moments de joie et de convivialité vécus au collège.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>3 janvier 2026</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">7 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 8 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/transco.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">L’importance d’arriver à temps au collège</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            Chaque matin, l’arrivée au Collège Bonsomi en bus scolaire crée une ambiance particulière. 
+                            Les élèves descendent rapidement du bus, conscients de l’importance d’arriver à l’heure 
+                            afin d’éviter le retard.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>24 décembre 2025</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">9 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 9 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card actualite-card h-100 shadow-sm">
+                    <img src="/assets/images/filles.jpg" class="card-img-top actualite-img" alt="Image article">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Campagne de sensibilisation environnementale</h5>
+                        
+                        <p class="card-text text-muted small mb-3">
+                            Le collège s'engage pour l'environnement avec des actions durables et des projets écologiques concrets.
+                        </p>
+                        
+                        <!-- Date -->
+                        <div class="mb-3 d-flex align-items-center text-secondary small">
+                            <i class="bi bi-calendar-event me-2"></i>
+                            <span>2 Janvier 2026</span>
+                        </div>
+                        
+                        <!-- Footer avec actions -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center pt-2 border-top">
+                            <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-chat-left-text"></i>
+                                Commenter
+                            </button>
+                            <small class="text-muted">11 commentaires</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <!-- Ressources -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="lien-footer">Accueil</a></li>
+                        <li><a href="/pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
+                        <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
+                    </ul>
+                </div>
+
+                <!-- À propos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">À propos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
+                        <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
+                        <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
+                    </ul>
+                </div>
+
+                <!-- Infos légales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Informations légales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/politique-confidentialite.html" class="lien-footer">Politique de confidentialité</a></li>
+                        <li><a href="/pages/conditions-inscription.html" class="lien-footer">Conditions d'inscription</a></li>
+                        <li><a href="/pages/faq-inscription.html" class="lien-footer">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright text-center">
+            <p>Av. Kinanga 393, Q4 N'djili/Kinshasa </p>
+            <p class="m-0">© 2026 Collège Bonsomi - Tous droits réservés | CAB</p>
+        </div>
+    </footer>
+
+    <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

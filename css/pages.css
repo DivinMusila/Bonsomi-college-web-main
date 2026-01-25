@@ -1,0 +1,64 @@
+/* CSS global pour toutes les pages */
+
+/* Header du contenu principal */
+.page-header {
+    border-bottom: 2px solid var(--bleu-primaire);
+    padding-bottom: 2rem;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+}
+
+/* Cartes */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenu légal */
+.legal-content section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.legal-content section:last-child {
+    border-bottom: none;
+}
+
+/* Sections */
+section h2 {
+    font-size: 1.5rem;
+}
+
+/* Aide visuelle */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Listes */
+ul {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .page-header p {
+        font-size: 0.95rem;
+    }
+}

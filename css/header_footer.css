@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ========== RÉINITIALISATION ========== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== VARIABLES COULEURS PROFESSIONNELLES ========== */
+html {
+    /* Couleurs primaires */
+    --bleu-primaire: #0D6EFD;
+    --bleu-primaire-light: #4D95FF;
+    --bleu-primaire-dark: #0A56D1;
+    --bleu-primaire-very-light: #E7F1FE;
+    --bleu-tres-fonce: #0A2540;
+    
+    /* Couleurs secondaires */
+    --accent-orange: #FF6B35;
+    --accent-green: #2ECC71;
+    
+    /* Neutres */
+    --gris-900: #1A1A2E;
+    --gris-800: #2D3748;
+    --gris-700: #4A5568;
+    --gris-600: #718096;
+    --gris-400: #CBD5E0;
+    --gris-200: #EDF2F7;
+    --gris-100: #F7FAFC;
+    --blanc-pur: #FFFFFF;
+    
+    /* Fonds */
+    --fond-principal: #F8F9FA;
+    --fond-secondary: #F0F4FF;
+    --fond-light: #FFFFFF;
+    
+    /* États */
+    --succes: #2ECC71;
+    --avertissement: #F1C40F;
+    --danger: #E74C3C;
+    --info: #3498DB;
+    
+    /* Ombres */
+    --shadow-sm: 0 2px 4px rgba(13, 110, 253, 0.08);
+    --shadow-md: 0 4px 8px rgba(13, 110, 253, 0.12);
+    --shadow-lg: 0 8px 16px rgba(13, 110, 253, 0.15);
+}
+
+/* ========== POLICES ET CORPS ========== */
+/* Import des icônes Bootstrap */
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("assets/bootstrap-icons-1.13.1/fonts/bootstrap-icons.woff") format("woff"),
+         url("assets/bootstrap-icons-1.13.1/fonts/bootstrap-icons.woff2") format("woff2");
+}
+
+body {
+    font-family: Poppins, Roboto, sans-serif;
+}
+
+/* ========== HEADER ========== */
+#header {
+    position: sticky;
+}
+
+/* Ombre du header pour plus de profondeur */
+.shadow-header {
+    box-shadow: 
+        0 1px 2px rgba(0, 0, 0, 0.18),
+        0 6px 12px rgba(0, 0, 0, .08);
+}
+
+/* Titre du collège dans le header */
+.title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: var(--bleu-tres-fonce);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-toggler {
+    border-color: var(--blanc-pur);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url('/assets/hamburger-white.svg');
+}
+
+.offcanvas {
+    --bs-offcanvas-width : 30rem;
+}
+
+/* Menu de navigation */
+.navbar .nav-link {
+    --bs-nav-link-font-weight : 600;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .nav-link:hover {
+    color: var(--bleu-primaire-light);
+}
+
+/* Bouton Espace élève */
+.btn-espace-eleve {
+    border: 2px solid var(--bleu-primaire-light);
+    color: var(--blanc-pur);
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-espace-eleve:hover {
+    background-color: var(--bleu-primaire);
+    border-color: var(--bleu-primaire);
+    color: var(--blanc-pur);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+footer {
+    padding: 0;
+    bottom: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: var(--bleu-tres-fonce);
+    box-shadow: 0 -2px 8px rgba(13, 110, 253, 0.1);
+}
+
+footer .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Lien du footer avec effet de couleur */
+.lien-footer {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.lien-footer:hover {
+    color: var(--bleu-primaire-light);
+    text-decoration: underline;
+    transform: translateX(2px);
+}
+
+/* Espacement entre les éléments du footer */
+footer li {
+    margin-bottom: 0.8rem;
+}
+
+/* Barre de copyright */
+.copyright {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
