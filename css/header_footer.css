@@ -155,13 +155,33 @@ footer .container-fluid {
 
 .lien-footer:hover {
     color: var(--bleu-primaire-light);
-    text-decoration: underline;
-    transform: translateX(2px);
+}
+/* Barre de copyright */
+.copyright {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.4rem; 
 }
 
-/* Espacement entre les éléments du footer */
-footer li {
-    margin-bottom: 0.8rem;
+/* Réseaux sociaux */
+.resaux-sociaux {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.resaux-sociaux a {
+    font-size: 1.5rem;
+    color: var(--blanc-pur);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resaux-sociaux a:hover {
+    color: var(--bleu-primaire-light);
+    transform: translateY(-3px);
 }
 
 /* Barre de copyright */
@@ -170,4 +190,8 @@ footer li {
     padding: 1.5rem 0;
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
+}
+
+.copyright p {
+    color: #ffffff !important;
 }
