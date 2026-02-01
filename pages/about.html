@@ -23,26 +23,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary" tabindex="-1" id="menu">
                     <div class="offcanvas-header">
                         <button class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto gap-2">
                             <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/pages/inscription.html">Inscription</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/about.html">À propos</a></li>
                             <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Sport</a></li>
-                                    <li><a class="dropdown-item" href="#">Culture</a></li>
-                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sports.html">Sport</a></li>
+                                    <li><a class="dropdown-item" href="/pages/culture.html">Culture</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sciences.html">Sciences</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
                         </ul>
-                        <a href="/pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                        <a href="/pages/inscription.html" class="btn rounded-5 btn-espace-eleve ms-auto">Inscription</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <div class="col-lg-6">
                     <div class="card border-0 overflow-hidden">
                         <!-- À COMPLÉTER: Remplacez ce chemin par l'image du collège -->
-                        <img src="/assets/images/bos.jpg" alt="Collège Bonsomi" class="card-img" style="height: 400px; object-fit: cover;">
+                        <img src="/assets/images/bos.jpg" alt="Collège Bonsomi" class="card-img">
                         <div class="card-body">
                             <p class="text-secondary small text-center mb-0">Le Collège Bonsomi - Lieu de formation et de vie</p>
                         </div>
@@ -89,33 +89,35 @@
         <section class="mb-5">
             <h2 class="text-primary fw-bold mb-4">Pourquoi étudier au Collège Bonsomi ?</h2>
             <p class="text-secondary mb-4">
-                Étudier au Collège Bonsomi, c'est faire le choix d'une formation scolaire de qualité, fondée sur des valeurs solides et un accompagnement éducatif attentif. Établissement des Pères Jésuites, le Collège Bonsomi s'inspire de la pédagogie ignatienne, qui place l'élève au centre de son apprentissage et vise la formation intégrale de la personne.
+                Étudier au Collège Bonsomi, c'est faire le choix d'une formation scolaire de qualité, fondée sur des valeurs solides
+                 et un accompagnement éducatif attentif. Établissement des <strong>Pères Jésuites</strong>, le Collège Bonsomi s'inspire 
+                 de la <strong>pédagogie ignatienne</strong>, qui place l'élève au centre de son apprentissage et vise la formation intégrale de la personne.
             </p>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card p-4 h-100 border-0 shadow-sm">
-                        <i class="bi bi-book-half text-primary" style="font-size: 2rem;"></i>
+                        <i class="bi bi-book-half text-primary"></i>
                         <h5 class="text-primary fw-bold mt-3 mb-2">Excellence académique</h5>
                         <p class="text-secondary">Une pédagogie rigoureuse et des enseignants qualifiés pour une formation académique solide</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-4 h-100 border-0 shadow-sm">
-                        <i class="bi bi-heart-fill text-primary" style="font-size: 2rem;"></i>
+                        <i class="bi bi-heart-fill text-primary"></i>
                         <h5 class="text-primary fw-bold mt-3 mb-2">Valeurs humaines</h5>
                         <p class="text-secondary">L'accompagnement bienveillant et l'éducation aux valeurs de respect et de solidarité</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-4 h-100 border-0 shadow-sm">
-                        <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
+                        <i class="bi bi-people-fill text-primary"></i>
                         <h5 class="text-primary fw-bold mt-3 mb-2">Communauté inclusive</h5>
                         <p class="text-secondary">Un environnement d'apprentissage où chacun trouve sa place et se sent soutenu</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card p-4 h-100 border-0 shadow-sm">
-                        <i class="bi bi-star-fill text-primary" style="font-size: 2rem;"></i>
+                        <i class="bi bi-star-fill text-primary"></i>
                         <h5 class="text-primary fw-bold mt-3 mb-2">Activités enrichissantes</h5>
                         <p class="text-secondary">Des activités parascolaires, sportives et culturelles pour le développement complet</p>
                     </div>
@@ -155,21 +157,18 @@
         </section>
 
         <!-- Section 4: L'équipe -->
-        <section class="mb-5">
+        <section class="mb-5 text-center">
             <h2 class="text-primary fw-bold mb-4">Notre Équipe Dirigeante</h2>
             <p class="text-secondary mb-4">
                 Une équipe expérimentée et dévouée au service de l'éducation et du bien-être de nos élèves.
             </p>
     
-            <div class="row g-4">
-                <!-- À COMPLÉTER: Ajoutez les membres de l'équipe avec photos -->
-                <div class="col-md-4">
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-4 col-sm-6">
                     <div class="text-center">
-                        <div class="bg-light rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/images/recteur.jpg" alt="recteur">
-                        </div>
-                        <h5 class="text-primary fw-bold">Nom du responsable</h5>
-                        <p class="text-secondary small">Fonction</p>
+                        <img src="/assets/images/recteur.jpg" alt="recteur" class="rounded-circle mb-3 shadow">
+                        <h5 class="text-primary fw-bold">Père Hubert Mvula, S.J.</h5>
+                        <p class="text-secondary small">Recteur</p>
                     </div>
                 </div>
             </div>
@@ -178,14 +177,21 @@
 
     <footer class="footer">
         <div class="container-fluid py-5">
+            <div class="resaux-sociaux">
+                <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://youtube.com/@collegebonsomiofficiel?si=gCLkg71ho69PwhbP"><i class="bi bi-youtube"></i></a>
+                <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+            </div>
             <div class="row">
                 <!-- Ressources -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white fw-bold mb-3">Ressources</h5>
                     <ul class="list-unstyled">
                         <li><a href="/index.html" class="lien-footer">Accueil</a></li>
-                        <li><a href="/pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
                         <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/album.html" class="lien-footer">Album photo</a></li>
                         <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
                     </ul>
                 </div>
@@ -196,7 +202,6 @@
                     <ul class="list-unstyled">
                         <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
                         <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
-                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
                         <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
                     </ul>
                 </div>
@@ -223,3 +228,5 @@
     <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

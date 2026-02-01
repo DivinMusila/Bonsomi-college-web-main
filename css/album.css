@@ -1,0 +1,82 @@
+.album-page {
+    background: #f6f4ef;
+}
+
+.album-hero {
+    padding: 4rem 0 3rem;
+    background: linear-gradient(120deg, #fff6e8 0%, #f1f5ff 55%, #fff 100%);
+}
+
+.album-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: #4f5b73;
+    font-size: 0.8rem;
+}
+
+.album-title {
+    font-size: clamp(2rem, 2vw + 1.5rem, 3.2rem);
+    color: #1d2a45;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.album-lead {
+    font-size: 1.05rem;
+    color: #4c5c72;
+    max-width: 32rem;
+}
+
+.album-hero-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(20, 31, 55, 0.18);
+    background: #fff;
+}
+
+.album-grid {
+    background: #f6f4ef;
+}
+
+.album-masonry {
+    column-count: 1;
+    column-gap: 1.25rem;
+}
+
+.album-tile {
+    break-inside: avoid;
+    margin-bottom: 1.25rem;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 14px 30px rgba(31, 45, 61, 0.12);
+}
+
+.album-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 576px) {
+    .album-masonry {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .album-masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .album-hero {
+        padding-top: 3rem;
+    }
+
+    .album-hero-card {
+        box-shadow: 0 12px 28px rgba(20, 31, 55, 0.15);
+    }
+}

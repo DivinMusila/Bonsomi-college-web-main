@@ -1,0 +1,13 @@
+/* Styles pour la page Confirmation d'inscription */
+
+.progress {
+    height: 3px;
+}
+
+.confirmation-card {
+    border: none;
+}
+
+.success-icon {
+    font-size: 3rem;
+}

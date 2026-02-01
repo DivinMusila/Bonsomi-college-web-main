@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg shadow-header">
             <div class="container-fluid">
                 <div class="navbar-brand d-flex justify-content-center align-items-center">
-                    <img src="../assets/images/logo.jpg" alt="logo" width="40" height="40" />
+                    <img src="/assets/images/logo.jpg" alt="logo" width="40" height="40" />
                     <span class="title text-white">Collège Bonsomi</span>
                 </div>
 
@@ -23,31 +23,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary" tabindex="-1" id="menu">
                     <div class="offcanvas-header">
                         <button class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto gap-2">
                             <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/inscription.html">Inscription</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/actualites.html">À la une</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/about.html">À propos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Sport</a></li>
-                                    <li><a class="dropdown-item" href="#">Culture</a></li>
-                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sports.html">Sport</a></li>
+                                    <li><a class="dropdown-item" href="/pages/culture.html">Culture</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sciences.html">Sciences</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
                         </ul>
-                        <a href="../pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                        <a href="/pages/inscription.html" class="btn rounded-5 btn-espace-eleve ms-auto">Inscription</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <main class="py-5">
         <div class="container">
@@ -57,8 +58,8 @@
                     <h1 class="text-center mb-4 text-primary fw-bold">Inscription Scolaire</h1>
                     
                     <!-- Barre de progression -->
-                    <div class="progress mb-5" style="height: 3px;">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress mb-5">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
 
                     <!-- Formulaire -->
@@ -224,15 +225,22 @@
 
     <footer class="footer">
         <div class="container-fluid py-5">
+            <div class="resaux-sociaux">
+                <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://youtube.com/@collegebonsomiofficiel?si=gCLkg71ho69PwhbP"><i class="bi bi-youtube"></i></a>
+                <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+            </div>
             <div class="row">
                 <!-- Ressources -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white fw-bold mb-3">Ressources</h5>
                     <ul class="list-unstyled">
                         <li><a href="/index.html" class="lien-footer">Accueil</a></li>
-                        <li><a href="../pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
-                        <li><a href="../pages/newsletter.html" class="lien-footer">Newsletter</a></li>
-                        <li><a href="../pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
+                        <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/album.html" class="lien-footer">Album photo</a></li>
+                        <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
                     </ul>
                 </div>
 
@@ -240,10 +248,9 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white fw-bold mb-3">À propos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="../pages/about.html" class="lien-footer">À propos de nous</a></li>
-                        <li><a href="../pages/contact.html" class="lien-footer">Contactez-nous</a></li>
-                        <li><a href="../pages/inscription.html" class="lien-footer">Inscription</a></li>
-                        <li><a href="../pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
+                        <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
+                        <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
+                        <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
                     </ul>
                 </div>
 
@@ -251,9 +258,9 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white fw-bold mb-3">Informations légales</h5>
                     <ul class="list-unstyled">
-                        <li><a href="../pages/politique-confidentialite.html" class="lien-footer">Politique de confidentialité</a></li>
-                        <li><a href="../pages/conditions-inscription.html" class="lien-footer">Conditions d'inscription</a></li>
-                        <li><a href="../pages/faq-inscription.html" class="lien-footer">FAQ</a></li>
+                        <li><a href="/pages/politique-confidentialite.html" class="lien-footer">Politique de confidentialité</a></li>
+                        <li><a href="/pages/conditions-inscription.html" class="lien-footer">Conditions d'inscription</a></li>
+                        <li><a href="/pages/faq-inscription.html" class="lien-footer">FAQ</a></li>
                     </ul>
                 </div>
             </div>
@@ -269,3 +276,5 @@
     <script src="../assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

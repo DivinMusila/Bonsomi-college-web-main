@@ -1,0 +1,124 @@
+/* Styles spécifiques à la page Hymne */
+
+.hymne-card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+.hymne-lyrics {
+    line-height: 2;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.hymne-lyrics p {
+    margin-bottom: 0.5rem;
+    color: #4A5568;
+}
+
+.strophe {
+    margin-bottom: 1.5rem;
+}
+
+.strophe p {
+    margin-bottom: 0.5rem;
+}
+
+.refrain {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #0D6EFD;
+    border-radius: 4px;
+}
+
+.refrain p {
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.refrain p:last-child {
+    margin-bottom: 0;
+}
+
+.strophe-kikongo {
+    font-style: italic;
+    color: #0D6EFD;
+    margin-bottom: 1.5rem;
+}
+
+.strophe-kikongo p {
+    margin-bottom: 0.5rem;
+}
+
+.hymne-history {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.hymne-history h4 {
+    color: #0D6EFD;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hymne-history p {
+    color: #4A5568;
+    line-height: 1.8;
+}
+
+/* Section Vidéo YouTube */
+.hymne-youtube {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.hymne-youtube h4 {
+    color: #0D6EFD;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.youtube-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.youtube-video-container iframe {
+    border-radius: 8px;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hymne-card {
+        padding: 1.5rem;
+    }
+
+    .hymne-lyrics {
+        font-size: 0.95rem;
+    }
+
+    .refrain {
+        padding: 0.75rem;
+    }
+
+    .youtube-video-container {
+        max-width: 100%;
+    }
+
+    .youtube-video-container iframe {
+        height: 250px !important;
+    }
+}
+

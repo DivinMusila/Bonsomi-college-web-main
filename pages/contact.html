@@ -23,31 +23,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="offcanvas offcanvas-md offcanvas-end text-primary bg-light" tabindex="-1" id="menu">
+                <div class="offcanvas offcanvas-md offcanvas-end text-primary" tabindex="-1" id="menu">
                     <div class="offcanvas-header">
                         <button class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto gap-2">
                             <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/pages/inscription.html">Inscription</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pages/about.html">À propos</a></li>
                             <li class="nav-item"><a class="nav-link" href="/pages/actualites.html">À la une</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Activités</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Sport</a></li>
-                                    <li><a class="dropdown-item" href="#">Culture</a></li>
-                                    <li><a class="dropdown-item" href="#">Sciences</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sports.html">Sport</a></li>
+                                    <li><a class="dropdown-item" href="/pages/culture.html">Culture</a></li>
+                                    <li><a class="dropdown-item" href="/pages/sciences.html">Sciences</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
                         </ul>
-                        <a href="/pages/espace-eleve.html" class="btn rounded-5 btn-espace-eleve ms-auto">Espace élève</a>
+                        <a href="/pages/inscription.html" class="btn rounded-5 btn-espace-eleve ms-auto">Inscription</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <main class="container my-5">
         <div class="page-header mb-5">
@@ -55,12 +56,12 @@
             <p class="text-secondary">Nous sommes à votre écoute</p>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Formulaire -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-8 mb-4">
                 <div class="card p-4">
                     <h3 class="text-primary fw-bold mb-4">Envoyez-nous un message</h3>
-                    <form>
+                    <form> 
                         <div class="mb-3">
                             <label for="nom" class="form-label">Nom</label>
                             <input type="text" class="form-control" id="nom" placeholder="Votre nom">
@@ -77,15 +78,13 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Votre message..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-primary me-5">Envoyer</button>
                     </form>
-                </div>
-            </div>
 
-            <!-- Informations de contact -->
-            <div class="col-lg-6">
-                <div class="card p-4 mb-3">
-                    <h3 class="text-primary fw-bold mb-4">Nos informations</h3>
+                    <hr />
+                    <!-- Informations de contact -->
+                    <div class="text-center">
+                        <h3 class="text-primary fw-bold mb-4">Nos informations</h3>
                     
                     <div class="mb-3">
                         <h5 class="text-primary fw-bold mb-2">
@@ -98,17 +97,16 @@
                         <h5 class="text-primary fw-bold mb-2">
                             <i class="bi bi-telephone"></i> Téléphone
                         </h5>
-                        <p class="text-secondary">+243822168369</p>
+                        <p class="text-secondary">+243 998 583 092</p>
                     </div>
 
-                    <div class="mb-3">
+                     <div class="mb-3">
                         <h5 class="text-primary fw-bold mb-2">
                             <i class="bi bi-envelope"></i> Email
                         </h5>
-                        <p class="text-secondary">
-                            <!-- À COMPLÉTER: Adresse email -->
-                            À COMPLÉTER: Ajoutez l'adresse email de contact
-                        </p>
+                        <a  href="mailto:bonsomicontact@gmail.com" class=".a-noline text-secondary">
+                           bonsomicontact@gmail.com
+                        </a>
                     </div>
 
                     <div class="mb-3">
@@ -116,10 +114,11 @@
                             <i class="bi bi-clock"></i> Horaires
                         </h5>
                         <p class="text-secondary">
-                            <!-- À COMPLÉTER: Horaires d'ouverture -->
-                            À COMPLÉTER: Ajoutez les horaires d'ouverture
+                            Lundi - Vendredi : 07h00 - 16h00
                         </p>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -127,14 +126,21 @@
 
     <footer class="footer">
         <div class="container-fluid py-5">
+            <div class="resaux-sociaux">
+                <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://youtube.com/@collegebonsomiofficiel?si=gCLkg71ho69PwhbP"><i class="bi bi-youtube"></i></a>
+                <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+            </div>
             <div class="row">
                 <!-- Ressources -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white fw-bold mb-3">Ressources</h5>
                     <ul class="list-unstyled">
                         <li><a href="/index.html" class="lien-footer">Accueil</a></li>
-                        <li><a href="/pages/espace-eleve.html" class="lien-footer">Espace élève</a></li>
+                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
                         <li><a href="/pages/newsletter.html" class="lien-footer">Newsletter</a></li>
+                        <li><a href="/pages/album.html" class="lien-footer">Album photo</a></li>
                         <li><a href="/pages/hymne.html" class="lien-footer">Hymne du collège</a></li>
                     </ul>
                 </div>
@@ -145,7 +151,6 @@
                     <ul class="list-unstyled">
                         <li><a href="/pages/about.html" class="lien-footer">À propos de nous</a></li>
                         <li><a href="/pages/contact.html" class="lien-footer">Contactez-nous</a></li>
-                        <li><a href="/pages/inscription.html" class="lien-footer">Inscription</a></li>
                         <li><a href="/pages/aide-inscription.html" class="lien-footer">Guide d'inscription</a></li>
                     </ul>
                 </div>
@@ -172,3 +177,5 @@
     <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
